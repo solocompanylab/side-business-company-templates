@@ -1,0 +1,15 @@
+{
+  "_comment": "承認ゲート用キューのサンプル。状態: review(検収待ち) → pending(公開待ち) → published(公開済み)。落ちたら blocked。固有名は入れない。",
+  "review": [
+    { "name": "<新商品A>", "addedBy": "dev", "addedAt": "YYYY-MM-DD" }
+  ],
+  "blocked": {
+    "<新商品B>": "検収で不合格。理由: <例: テスト3条件のうち1つで0件>"
+  },
+  "pending": [
+    { "name": "<検収合格した商品C>", "approvedBy": "qa", "approvedAt": "YYYY-MM-DD" }
+  ],
+  "published": [
+    { "name": "<公開済み商品D>", "publishedAt": "YYYY-MM-DD" }
+  ]
+}
