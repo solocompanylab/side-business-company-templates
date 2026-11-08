@@ -3,9 +3,9 @@
   "review": [
     { "name": "<新商品A>", "addedBy": "dev", "addedAt": "YYYY-MM-DD" }
   ],
-  "blocked": {
-    "<新商品B>": "検収で不合格。理由: <例: テスト3条件のうち1つで0件>"
-  },
+  "blocked": [
+    { "name": "<新商品B>", "reason": "検収で不合格。直す点: <例: テスト3条件のうち1つで0件>", "blockedAt": "YYYY-MM-DD" }
+  ],
   "pending": [
     { "name": "<検収合格した商品C>", "approvedBy": "qa", "approvedAt": "YYYY-MM-DD" }
   ],
